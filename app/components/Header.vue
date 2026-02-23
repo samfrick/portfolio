@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const links = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Projects", href: "/projects" },
+    { label: "Accueil", href: "/" },
+    { label: "A Propos", href: "/about" },
+    { label: "Projets", href: "/projects" },
     { label: "Contact", href: "/contact" }
 ]
 </script>
 
 <template>
-    <UHeader>
+    <UHeader title="Portfolio">
         <UNavigationMenu :links="links" />
     </UHeader>
 </template>
