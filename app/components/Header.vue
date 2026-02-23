@@ -8,7 +8,7 @@ const links = [
 </script>
 
 <template>
-    <UHeader title="Portfolio">
+    <UHeader title="Portfolio Salome Frick">
         <UNavigationMenu :links="links" />
     </UHeader>
 </template>
