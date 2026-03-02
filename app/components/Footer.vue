@@ -1,29 +1,17 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-const items: NavigationMenuItem[] = [
-    {
-        label: 'Figma Kit',
-        to: 'https://go.nuxt.com/figma-ui',
-        target: '_blank'
-    },
-    {
-        label: 'Playground',
-        to: 'https://stackblitz.com/edit/nuxt-ui',
-        target: '_blank'
-    },
-    {
-        label: 'Releases',
-        to: 'https://github.com/nuxt/ui/releases',
-        target: '_blank'
-    }
+const items = <NavigationMenuItem[]>[
+    { label: "A Propos", to: "/about" },
+    { label: "Projets", to: "/projects" },
+    { label: "Contact", to: "/contact" }
 ]
 </script>
 
 <template>
     <UFooter>
         <template #left>
-            <p class="text-muted text-sm">Copyright © {{ new Date().getFullYear() }}</p>
+            <p class="text-muted text-sm">Salomé Frick © {{ new Date().getFullYear() }}</p>
         </template>
 
         <UNavigationMenu :items="items" variant="link" />
