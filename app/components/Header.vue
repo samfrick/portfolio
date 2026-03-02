@@ -1,14 +1,20 @@
 <script setup lang="ts">
-const links = [
-    { label: "Accueil", href: "/" },
-    { label: "A Propos", href: "/about" },
-    { label: "Projets", href: "/projects" },
-    { label: "Contact", href: "/contact" }
+import type { NavigationMenuItem } from '@nuxt/ui'
+
+const items = <NavigationMenuItem[]>[
+    { label: "Accueil", to: "/" },
+    { label: "A Propos", to: "/about" },
+    { label: "Projets", to: "/projects" },
+    { label: "Contact", to: "/contact" }
 ]
 </script>
 
 <template>
-    <UHeader title="Portfolio">
-        <UNavigationMenu :links="links" />
+    <UHeader title="SF">
+        <UNavigationMenu :items="items" />
+
+        <template #right>
+            <UColorModeButton />
+        </template>
     </UHeader>
 </template>
