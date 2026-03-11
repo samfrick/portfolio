@@ -28,10 +28,34 @@ const itemsSchool = ref<TimelineItem[]>([
 
 const itemsJob = ref<TimelineItem[]>([
     {
+        date: 'Mars 2026 - Aujourd\'hui',
+        title: 'Secrétaire de l\'Orchestre d\'Harmonie des Jeunes de Strasbourg - OHJS',
+        description: 'Association - Rédaction de compte-rendu de réunion, participation à l\'organisation des événements, chargée de communication.',
+        icon: 'i-lucide-square-code'
+    },
+    {
         date: 'Septembre 2025 - Aujourd\'hui',
         title: 'Alternante Développeuse web Front-end & Conceptrice UX',
         description: 'Logitud Solutions, Strasbourg - Conception et développement de logiciels métiers pour la fonction publique.',
         icon: 'i-lucide-square-code'
+    },
+    {
+        date: 'Mars 2025 - Mars 2026',
+        title: 'Présidente de l\'Amicale des Étudiants et des Anciens de l\'IUT de Haguenau - AEAIH',
+        description: 'Association étudiante - Prise de décisions, organisation d\'événements...',
+        icon: 'i-lucide-hand-heart'
+    },
+    {
+        date: 'Avril 2025 - Juin 2025',
+        title: 'Stagiaire Développeuse web Front-end',
+        description: 'Agence de communication Izhak Interact, Strasbourg - Développement et mise à jour de sites pour de nombreux clients.',
+        icon: 'i-lucide-square-code'
+    },
+    {
+        date: 'Juillet 2023',
+        title: 'Surveillante de salle',
+        description: 'Musées de la ville de Strasbourg',
+        icon: 'i-lucide-landmark'
     },
 ])
 </script>
@@ -44,13 +68,15 @@ const itemsJob = ref<TimelineItem[]>([
             <img src="https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg"
                 alt="fraise" class="rounded-full w-80 aspect-square object-cover">
         </UPageHero>
-        <div class="flex flex-col gap-5">
-            <h2 class="text-3xl font-bold">Mes formations</h2>
-            <UTimeline :items="itemsSchool" />
-        </div>
-        <div class="flex flex-col gap-5">
-            <h2 class="text-3xl font-bold">Mes formations</h2>
-            <UTimeline :items="itemsJob" />
+        <div class="grid grid-cols-2 mx-40 gap-30">
+            <div class="flex flex-col gap-5">
+                <h2 class="text-3xl font-bold">Mes expériences pros et associatives</h2>
+                <UTimeline :items="itemsJob" />
+            </div>
+            <div class="flex flex-col gap-5">
+                <h2 class="text-3xl font-bold">Mes formations</h2>
+                <UTimeline :items="itemsSchool" />
+            </div>
         </div>
     </section>
 </template>
