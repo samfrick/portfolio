@@ -7,4 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/icon'
   ],
   css: ['~/assets/css/main.css'],
+  nitro: {
+    preset: "vercel"
+  }
 })
