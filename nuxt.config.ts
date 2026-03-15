@@ -4,7 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/ui',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@vercel/analytics'
   ],
   css: ['~/assets/css/main.css'],
+  nitro: {
+    preset: "vercel"
+  }
 })
