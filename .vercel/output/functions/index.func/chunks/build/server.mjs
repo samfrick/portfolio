@@ -58,7 +58,6 @@ function parallelTaskCaller(hooks, args, name) {
 function callEachWith(callbacks, arg0) {
 	for (const callback of [...callbacks]) callback(arg0);
 }
-
 //#endregion
 //#region src/hookable.ts
 var Hookable = class {
@@ -127,6 +126,9 @@ var Hookable = class {
 			if (index !== -1) hooks.splice(index, 1);
 			if (hooks.length === 0) this._hooks[name] = void 0;
 		}
+	}
+	clearHook(name) {
+		this._hooks[name] = void 0;
 	}
 	deprecateHook(name, deprecated) {
 		this._deprecatedHooks[name] = typeof deprecated === "string" ? { to: deprecated } : deprecated;
