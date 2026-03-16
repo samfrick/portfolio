@@ -8,4 +8,7 @@ export default defineNuxtConfig({
     '@vercel/analytics'
   ],
   css: ['~/assets/css/main.css'],
+  build: {
+    transpile: ['@iconify/utils']
+  }
 })
