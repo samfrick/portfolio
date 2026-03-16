@@ -8,12 +8,16 @@ export default defineNuxtConfig({
     '@vercel/analytics'
   ],
   css: ['~/assets/css/main.css'],
-  build: {
-    transpile: ['@iconify/utils']
-  },
-  nitro: {
-    externals: {
-      inline: [/@iconify[\\/ ]utils/]
-    }
-  }
+  // build: {
+  //   transpile: ['@iconify/utils']
+  // },
+  // nitro: {
+  //   externals: {
+  //     inline: [/@iconify[\\/ ]utils/]
+  //   }
+  // },
+  // icon: {
+  //   provider: 'none',
+  //   clientBundle: { scan: true }
+  // }
 })
