@@ -65,7 +65,7 @@ const itemsJob = ref<TimelineItem[]>([
         <UPageHero title="A propos de moi" :description="aboutMe" orientation="horizontal" :ui="{
             container: 'lg:py-32 lg:flex lg:flex-row',
         }">
-            <img src="" alt="about-me" class="rounded-full w-80 aspect-square object-cover">
+            <img src="~/assets/images/about-me.JPG" alt="about-me" class="rounded-full w-80 aspect-square object-cover">
         </UPageHero>
         <div class="grid grid-cols-2 mx-40 gap-30">
             <div class="flex flex-col gap-5">
