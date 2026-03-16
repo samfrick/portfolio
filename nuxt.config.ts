@@ -10,5 +10,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   build: {
     transpile: ['@iconify/utils']
+  },
+  nitro: {
+    externals: {
+      inline: [/@iconify[\\/ ]utils/]
+    }
   }
 })
