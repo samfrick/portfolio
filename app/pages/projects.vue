@@ -63,7 +63,7 @@ const projects = ref([
                 <template #footer>
                     <ULink :to="project.link" class="text-sm text-primary flex items-center">
                         Voir le projet
-                        <UIcon name="lucide:arrow-right"
+                        <UIcon name="lucide-i-arrow-right"
                             class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100" />
                     </ULink>
                 </template>
