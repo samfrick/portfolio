@@ -31,7 +31,8 @@ const itemsJob = ref<TimelineItem[]>([
         date: 'Mars 2026 - Aujourd\'hui',
         title: 'Secrétaire de l\'Orchestre d\'Harmonie des Jeunes de Strasbourg - OHJS',
         description: 'Association - Rédaction de compte-rendu de réunion, participation à l\'organisation des événements, chargée de communication.',
-        icon: 'i-lucide-square-code'
+        icon: 'i-lucide-square-code',
+        // on croise les doigts
     },
     {
         date: 'Septembre 2025 - Aujourd\'hui',
