@@ -11,11 +11,9 @@ export default defineNuxtConfig({
   // build: {
   //   transpile: ['@iconify/utils']
   // },
-  // nitro: {
-  //   externals: {
-  //     inline: [/@iconify[\\/ ]utils/]
-  //   }
-  // },
+  nitro: {
+    preset: 'static'
+  },
   // icon: {
   //   provider: 'none',
   //   clientBundle: { scan: true }
